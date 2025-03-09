@@ -1,6 +1,8 @@
 // src/app/page.tsx
+
 import { DashboardPreview } from "@/components/home/DashboardPreview";
 import { FeatureCards } from "@/components/home/FeatureCards";
+
 
 export default function HomePage() {
   return (
