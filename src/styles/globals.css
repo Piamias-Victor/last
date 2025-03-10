@@ -2,13 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --font-inter: 'Inter', sans-serif;
-    --font-poppins: 'Poppins', sans-serif;
-  }
+/* Masquer les flèches par défaut sur Chrome, Safari, Edge, et Opera */
+.no-spinner::-webkit-outer-spin-button,
+.no-spinner::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
-  body {
-    @apply bg-white text-black dark:bg-gray-900 dark:text-white;
-  }
+/* Masquer les flèches par défaut sur Firefox */
+.no-spinner {
+  -moz-appearance: textfield;
 }
